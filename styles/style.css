@@ -1,4 +1,3 @@
-
 :root {
     --black: #383838;
     --green: #066163;
@@ -15,9 +14,10 @@
 
 body {
     background: var(--white) !important;
+    overflow-x: hidden;
 }
 
-#main_container {
+.main_container {
     width: 90%;
     margin: auto;
     clear: both;
@@ -31,7 +31,7 @@ body {
     width: 100%;
 }
 
-#user_area > a {
+#user_area>a {
     cursor: pointer;
     color: var(--black);
     text-decoration: none;
@@ -49,15 +49,15 @@ body {
     position: relative;
 }
 
-#logo_container > img {
+#logo_container>img {
     width: 100px;
 }
 
-#logo_container > *  {
+#logo_container>* {
     text-align: center;
 }
 
-#logo_container > h2 {
+#logo_container>h2 {
     color: var(--green);
 }
 
@@ -71,4 +71,280 @@ body {
 #events_container {
     position: relative !important;
     clear: both;
+}
+
+#dropdown_events {
+    background: none !important;
+    border: none;
+    color: var(--black);
+    font-size: 700;
+}
+
+#events {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.event-container {
+    width: 350px;
+    height: 220px;
+    position: relative;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.event-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.event-data {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    z-index: 1;
+    background: var(--yellow);
+    padding: 1rem;
+    clear: both;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.event-data-shown {
+    height: 85%;
+    overflow: none;
+}
+
+.data-shown {
+    display: block;
+}
+
+.event-data>* {
+    font-weight: 500;
+}
+
+.event-data>div>.event-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.event-data>div>.event-date {
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: .9rem;
+}
+
+/* From uiverse.io by @nikk7007 */
+.buy-button {
+    float: right;
+    padding: 0.3em 1.2em;
+    border: 2px solid var(--green);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: var(--green);
+}
+
+.buy-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--green);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.buy-button:hover::before {
+    width: 105%;
+}
+
+.buy-button:hover {
+    color: var(--white);
+}
+
+#sketch_1 {
+    position: relative;
+    right: 30px;
+}
+
+#users_container {
+    width: 100vw;
+    min-height: 100px;
+    background: var(--green);
+    margin-top: 100px;
+}
+
+#layer_1 {
+    width: 85vw;
+    height: 25px;
+    position: relative;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #488789;
+    z-index: -1;
+}
+
+#layer_2 {
+    width: 75vw;
+    height: 25px;
+    position: relative;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #68A7A9;
+    z-index: -2;
+}
+
+#users_container {
+    color: var(--white);
+    font-weight: 700 !important;
+}
+
+#users_intro {
+    position: relative;
+    left: 50%;
+    margin-top: 1.5rem;
+    transform: translateX(-50%);
+    width: 500px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* From uiverse.io by @gagan-gv */
+.card {
+    width: 190px;
+    height: 254px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 1rem;
+}
+
+.card > * {
+    color: var(--black);
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: var(--yellow);
+}
+
+.card .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: var(--yellow);
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+.card:hover .blob {
+    height: 0;
+}
+
+.card .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.card:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    z-index: 99999;
+}
+
+.card h2 {
+    padding: 15px 10px;
+    font-size: 25px;
+    transition: all 0.1s;
+    z-index: 99;
+    line-height: 17px;
+}
+
+.card span {
+    font-size: 18px;
+}
+
+.card:hover h2 {
+    display: none;
+}
+
+.card>p {
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.card>p>svg {
+    padding: 5px;
+}
+
+.card:hover>p {
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+    opacity: 1;
+    transition: all 0.1s;
+}
+
+#members_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+.card > a {
+    text-decoration: none;
+    font-weight: 700;
+    padding-top: 1.2rem;
+}
+
+.card > a:hover {
+    color: initial;
 }

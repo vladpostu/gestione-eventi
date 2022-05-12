@@ -31,6 +31,8 @@
             <img src="./data/imgs/icons/click_icon.png" id="click_icon" alt="click icon">
         </div>
 
+        <button class="btn btn-success mt-5" id="add_event">AGGIUNGI EVENTO</button>
+
         <div id="events_container" class="mt-5">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle mt-5 fw-bold" type="button" id="dropdown_events"
@@ -38,12 +40,13 @@
                     TUTTI GLI EVENTI
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Tutti gli eventi</a></li>
+                    <li><a class="dropdown-item" href="#">Musica</a></li>
+                    <li><a class="dropdown-item" href="#">Sport</a></li>
+                    <li><a class="dropdown-item" href="#">Museo</a></li>
+                    <li><a class="dropdown-item" href="#">Teatro</a></li>
                 </ul>
             </div>
-
             <div id="events" class="mt-4">
                 <div class="event-container">
                     <img src="./data/imgs/events-imgs/fenice.jpg" alt="" class="event-background">
@@ -69,6 +72,174 @@
                         </div>
                     </div>
                 </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/dma.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">DMA</div>
+                            <div class="event-date">07/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Imola - Emilia-Romagna</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Sport</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Corsa sul circuito di Imola</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/skating.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Bol on Ice</div>
+                            <div class="event-date">08/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Bologna - Emilia-Romagna</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Sport</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Spettacolo sul ghiaccio</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/kappa-future-biglietti.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Kappa FuturFestival</div>
+                            <div class="event-date">12/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Torino - Piemonte</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Musica</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Festival della musica</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/music.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Festival Musica</div>
+                            <div class="event-date">13/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Milano - Lombardia</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Musica</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Festival Musicale</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/grotte.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Grotte di Castellana</div>
+                            <div class="event-date">06/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Castellana - Puglia</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Museo</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Museo delle rocce</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/science.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Scienzaland</div>
+                            <div class="event-date">16/06/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Milano - Lombardia</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Museo</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Museo di scienza</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-container">
+                    <img src="./data/imgs/events-imgs/art.jpg" alt="" class="event-background">
+                    <div class="event-data">
+                        <div class="d-flex justify-content-between">
+                            <div class="event-title">Banksy</div>
+                            <div class="event-date">06/07/2022</div>
+                        </div>
+                        <div class="data-shown">
+                            <div class="event-position mt-2 small-text">
+                                <img src="./data/imgs/icons/position_icon.png" alt="">
+                                <span>Milano - Lombardia</span>
+                            </div>
+                            <div class="event-position mt-1 small-text">
+                                <img src="./data/imgs/icons/category_icon.png" alt="">
+                                <span>Museo</span>
+                            </div>
+                            <div class="event-description mt-1 small-text">
+                                <img src="./data/imgs/icons/description_icon.png" alt="">
+                                <span>Esposizione Banksy</span>
+                            </div>
+                            <button class="buy-button mt-3">Compra</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <img src="./data/sketches/sketch_1.png" class="mt-4" id="sketch_1" alt="">
         </div>
@@ -87,28 +258,34 @@
                 <div class="blob"></div>
                 <img src="./data/imgs/persons/2.jpg" class="img"></img>
                 <h2>Leonardo<br><span>Spinazzola</span></h2>
-                <a href="mailto:prova@gmail.com">CONTACT</a>
+                <a href="mailto:prova@gmail.com">Contatta</a>
             </div>
             <div class="card">
                 <div class="blob"></div>
                 <img src="./data/imgs/persons/3.jpg" class="img"></img>
                 <h2>Tammy<br><span>Abraham</span></h2>
-                <a href="mailto:prova@gmail.com">CONTACT</a>
+                <a href="mailto:prova@gmail.com">Contatta</a>
             </div>
             <div class="card">
                 <div class="blob"></div>
                 <img src="./data/imgs/persons/4.jpg" class="img"></img>
                 <h2>Jamie<br><span>Vardy</span></h2>
-                <a href="mailto:prova@gmail.com">CONTACT</a>
+                <a href="mailto:prova@gmail.com">Contatta</a>
             </div>
             <div class="card">
                 <div class="blob"></div>
                 <img src="./data/imgs/persons/5.jpg" class="img"></img>
                 <h2>Kevin<br><span>De Bruyne</span></h2>
-                <a href="mailto:prova@gmail.com">CONTACT</a>
+                <a href="mailto:prova@gmail.com">Contatta</a>
             </div>
         </div>
+        <img src="./data/sketches/2.png" alt="">
     </div>
+
+    <footer id="footer">
+        <div>Vlad Postu Production</div>
+        <div id="rights">© All rights reserved</div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
